@@ -677,4 +677,6 @@ a.ocard:hover img{transform:scale(1.04)}
   .nav{height:56px}
   .mlabel{padding:8px 8px 7px;font-size:13px;line-height:1}
   .mgrid{gap:14px}
+  .hero-in{padding-bottom:78px}
+  .ev figure{aspect-ratio:2.2/1}
 }
