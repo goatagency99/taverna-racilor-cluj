@@ -586,6 +586,8 @@ a.ocard:hover img{transform:scale(1.04)}
 /* ===== Seafood Boil page: bucket colours (black, orange-red, yellow, navy) ===== */
 .bp{--paper:#F5ECD9;--sand:#EFE2C6;--bo:#E2512B;--br:#A5281B;--by:#F2B33D;--bn:#1B3A66;--bk:#14110F}
 .bp-paper{background:var(--paper)}.bp-sand{background:var(--sand)}.bp-orange{background:var(--bo);color:#fff}
+.bp-intro{padding-top:28px}
+.bp-intro .polaroid{margin-top:0}
 .brush.c-paper{color:var(--paper)}.brush.c-sand{color:var(--sand)}.brush.c-orange{color:var(--bo)}
 .bp .btn{border-radius:10px;font-family:"Fredoka",var(--sans);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
 .btn-yel{background:#F2B33D;color:#1B3A66;border-color:#F2B33D}
