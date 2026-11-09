@@ -677,7 +677,9 @@ a.ocard:hover img{transform:scale(1.04)}
   .nav{height:56px}
   .mlabel{padding:8px 8px 7px;font-size:13px;line-height:1}
   .mgrid{gap:14px}
-  .hero-in{padding-bottom:78px}
+  .hero-in{min-height:min(58svh,560px);display:flex;flex-direction:column;justify-content:space-between;padding-bottom:54px}
+  .hero-top{margin-top:-8px}
+  .hero-bottom{margin-top:36px}
   .hero .lead{margin-top:24px}
   .ev figure{aspect-ratio:2.2/1}
 }
