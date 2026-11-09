@@ -19,7 +19,8 @@ $$("[data-go]").forEach(a=>{a.href=SITE.links[a.dataset.go]||"#form"});
 
 /* header, menu, mobile bar */
 const header=$("#top"),bar=$("#bar"),loc=$("#locatie"),frm=$("#form"),burger=$("#burger"),menu=$("#menu");
-const onScroll=()=>{const y=scrollY;header.classList.toggle("compact",y>40);if(bar&&loc&&frm)bar.classList.toggle("on",y>loc.offsetTop-innerHeight*.5&&y<frm.offsetTop-innerHeight*.5)};
+let lastScrollY=scrollY;
+const onScroll=()=>{const y=scrollY;header.classList.toggle("compact",y>40);if(matchMedia("(max-width:760px)").matches){if(y<80||y<lastScrollY-3)header.classList.remove("header-hidden");else if(y>120&&y>lastScrollY+3)header.classList.add("header-hidden")}else header.classList.remove("header-hidden");lastScrollY=y;if(bar&&loc&&frm)bar.classList.toggle("on",y>loc.offsetTop-innerHeight*.5&&y<frm.offsetTop-innerHeight*.5)};
 addEventListener("scroll",onScroll,{passive:true});onScroll();
 const setMenu=o=>{menu.classList.toggle("open",o);burger.setAttribute("aria-expanded",o);document.body.style.overflow=o?"hidden":"";if(o)header.classList.remove("compact")};
 burger.addEventListener("click",()=>setMenu(!menu.classList.contains("open")));
