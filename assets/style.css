@@ -678,5 +678,14 @@ a.ocard:hover img{transform:scale(1.04)}
   .mlabel{padding:8px 8px 7px;font-size:13px;line-height:1}
   .mgrid{gap:14px}
   .hero-in{padding-bottom:78px}
+  .hero .lead{margin-top:24px}
   .ev figure{aspect-ratio:2.2/1}
+}
+
+/* Păstrează avantajele ca secțiune separată după eliminarea prețurilor băuturilor. */
+.advantages-only{max-width:780px}
+
+/* Cardurile pachetelor nu se mai deplasează vertical la prima apariție pe mobil. */
+@media(max-width:979px){
+  .js .cards .card.rv{transform:none;transition:opacity .7s ease}
 }
