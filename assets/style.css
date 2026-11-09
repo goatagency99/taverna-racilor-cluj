@@ -675,7 +675,8 @@ a.ocard:hover img{transform:scale(1.04)}
 
 /* Mobil: headerul nu rămâne peste listă, iar cardurile urmează proporțiile London Kitchen. */
 @media(max-width:760px){
-  header.top{position:absolute}
+  header.top{position:fixed;transition:transform .25s ease}
+  header.top.header-hidden{transform:translateY(-100%)}
   .socials{display:none}
   .nav{height:56px}
   .mlabel{padding:8px 8px 7px;font-size:13px;line-height:1}
