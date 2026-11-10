@@ -20,7 +20,7 @@ const SITE = {
     linkedin: "", facebook: "", tiktok: "https://www.tiktok.com/@tavernaracilor.cluj",
     instagram: "https://www.instagram.com/tavernaracilor.cluj"
   },
-  phone: "",           // ex: "+40 7xx xxx xxx"
-  email: "contact@tavernaracilorcluj.ro",
+  phone: "0736247383", // contact furnizat de manager
+  email: "cluj@tavernaracilor.ro",
   formEndpoint: ""     // opțional: URL de formular (Formspree etc.). Gol = se deschide e-mailul
 };
